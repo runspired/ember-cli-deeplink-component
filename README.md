@@ -1,4 +1,4 @@
-# Ember-cli-deep-link-component
+# Ember-cli-deeplink-component
 
 This README outlines the details of collaborating on this Ember addon.
 

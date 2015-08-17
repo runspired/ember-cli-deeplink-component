@@ -1,7 +1,7 @@
 {
-  "name": "ember-cli-deep-link-component",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "name": "ember-cli-deeplink-component",
+  "version": "0.0.2-alpha",
+  "description": "An Ember.js component used to deep link to in-page content.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,7 +11,10 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zakmac/ember-cli-deeplink-component"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
@@ -22,6 +25,7 @@
     "ember-cli": "1.13.8",
     "ember-cli-app-version": "0.5.0",
     "ember-cli-content-security-policy": "0.4.0",
+    "ember-cli-deep-link-component": ">0.0.0",
     "ember-cli-dependency-checker": "^1.0.1",
     "ember-cli-htmlbars": "0.7.9",
     "ember-cli-htmlbars-inline-precompile": "^0.2.0",
