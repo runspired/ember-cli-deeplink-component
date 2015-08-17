@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-cli-deep-link-component'
+  name: 'ember-cli-deeplink-component'
 };
