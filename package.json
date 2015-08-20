@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-deeplink-component",
   "version": "0.0.2",
-  "description": "An Ember.js component used to deep link to in-page content.",
+  "description": "An Ember.js component for jumping to in-page content.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -41,7 +41,18 @@
     "ember-try": "0.0.6"
   },
   "keywords": [
-    "ember-addon"
+    "component",
+    "deep",
+    "deep-link",
+    "deeplink",
+    "ember",
+    "ember-addon",
+    "ember-cli",
+    "embercli",
+    "emberjs",
+    "link",
+    "jump",
+    "jump-to"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.3"
