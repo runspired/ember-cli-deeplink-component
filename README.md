@@ -1,4 +1,4 @@
-# ember-cli-filter-component
+# ember-cli-deeplink-component
 
 [![Code Climate](https://codeclimate.com/github/zakmac/ember-cli-deeplink-component/badges/gpa.svg)](https://codeclimate.com/github/zakmac/ember-cli-deeplink-component)
 [![Ember Observer Score](http://emberobserver.com/badges/ember-cli-deeplink-component.svg)](http://emberobserver.com/addons/ember-cli-deeplink-component)

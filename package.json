@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-deeplink-component",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An Ember.js component for jumping to in-page content.",
   "directories": {
     "doc": "doc",
