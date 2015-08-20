@@ -51,15 +51,14 @@ export default Ember.Component.extend({
   decoratedHref: Ember.computed('href', function() {
 
     var href = this.get('href');
+    var type = typeof href;
 
-    if (href) {
+    switch (type === 'string' || (type === 'number' && !isNaN(href))) {
 
-      return '#' + href;
-
-    } else {
-
-      return '#';
+      case false: href = ''; break;
     }
+
+    return '#' + href;
   }),
   /**
    * @access      private
@@ -79,7 +78,7 @@ export default Ember.Component.extend({
 
     } else {
 
-      return 9999999;
+      return 999999999;
     }
   }),
   /**
@@ -89,14 +88,14 @@ export default Ember.Component.extend({
    * @name        duration
    * @type        {integer}
    */
-  duration: null,
+  duration: 0,
   /**
    * @access      public
    * @description target id/name
    * @name        duration
    * @type        {string}
    */
-  href: null,
+  href: '',
   /**
    * @access      public
    * @description whether scrollTo events can be cancelled/overridden
@@ -110,7 +109,7 @@ export default Ember.Component.extend({
    * @name        duration
    * @type        {integer}
    */
-  speed: null,
+  speed: 999999999,
   /**
    * @access      public
    * @description component's tag in the DOM
@@ -127,6 +126,22 @@ export default Ember.Component.extend({
   text: '',
 
   // methods
+
+  calculateDuration: function(distance) {
+
+    distance = parseInt(distance);
+
+    // if a speed was specified, return an appropriate duration to maintain
+    // that speed
+    if (this.get('decoratedSpeed') > 0 && !isNaN(distance)) {
+
+      return Math.floor(distance / this.get('decoratedSpeed') * 1000);
+
+    } else {
+
+      return 0;
+    }
+  },
 
   /**
    * @description runs the `cancelAnimation` method on DeepLinkService
@@ -177,8 +192,7 @@ export default Ember.Component.extend({
 
     var currentPosition = Ember.$('body').scrollTop();
     var distance = 0;
-    var duration = this.get('decoratedDuration');
-    var speed = this.get('decoratedSpeed');
+    var easing = this.get('easing');
     var $target = Ember.$('a[name='+ this.get('href') +'], ' + this.get('decoratedHref'));
     // y position of the target element; defaults to current position, which is
     // used when no target is found
@@ -194,21 +208,14 @@ export default Ember.Component.extend({
       distance = Math.abs(currentPosition - targetPosition);
     }
 
-    // calculate a constant speed, if a speed was specified
-    if (this.get('speed')) {
-
-      duration = Math.floor(distance / speed * 1000);
-    }
-
     // scroll to the target position
     if (distance > 0) {
 
       Ember.$('body')
         .animate(
           { scrollTop: targetPosition +'px' },
-          duration,
-          'linear'
-          // this.cancelAnimation()
+          calculateDuration(distance),
+          easing
         );
     }
   },
