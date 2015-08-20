@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-deeplink-component",
-  "version": "0.0.2-alpha",
+  "version": "0.0.2",
   "description": "An Ember.js component used to deep link to in-page content.",
   "directories": {
     "doc": "doc",
@@ -25,7 +25,6 @@
     "ember-cli": "1.13.8",
     "ember-cli-app-version": "0.5.0",
     "ember-cli-content-security-policy": "0.4.0",
-    "ember-cli-deep-link-component": ">0.0.0",
     "ember-cli-dependency-checker": "^1.0.1",
     "ember-cli-htmlbars": "0.7.9",
     "ember-cli-htmlbars-inline-precompile": "^0.2.0",
