@@ -108,6 +108,20 @@ test('initial property values', function(assert) {
   );
 });
 
+// services
+
+test('deepLink service', function(assert) {
+
+  assert.expect(1);
+
+  var sub = this.subject();
+
+  assert.equal(
+    sub.deepLinkService.type,
+    'service', 'deepLink service is injected'
+  );
+});
+
 // computed properties
 
 test('decoratedDuration computed property', function(assert) {
@@ -250,4 +264,28 @@ test('calculateDuration method', function(assert) {
   assert.strictEqual(
     sub.calculateDuration(1024),
     800, 'distance of 1,024 with speed set to 1,280');
+});
+
+test('cancelAnimation method', function(assert) {
+
+  assert.expect(1);
+
+  var sub = this.subject();
+
+  assert.strictEqual(
+    typeof sub.cancelAnimation,
+    'function', 'cancelAnimation method exists'
+  );
+});
+
+test('goToAnchor method', function(assert) {
+
+  assert.expect(1);
+
+  var sub = this.subject();
+
+  assert.strictEqual(
+    typeof sub.goToAnchor,
+    'function', 'goToAnchor method exists'
+  );
 });
