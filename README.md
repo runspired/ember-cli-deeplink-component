@@ -3,8 +3,6 @@
 [![Code Climate](https://codeclimate.com/github/zakmac/ember-cli-deeplink-component/badges/gpa.svg)](https://codeclimate.com/github/zakmac/ember-cli-deeplink-component)
 [![Ember Observer Score](http://emberobserver.com/badges/ember-cli-deeplink-component.svg)](http://emberobserver.com/addons/ember-cli-deeplink-component)
 [![Shields.io](https://img.shields.io/badge/tests-38%2F38-brightgreen.svg)](http://shields.io)
-[![Test Coverage](https://codeclimate.com/github/zakmac/ember-cli-deeplink-component/badges/coverage.svg)](https://codeclimate.com/github/zakmac/ember-cli-deeplink-component/coverage)
-[![Build Status](https://travis-ci.org/zakmac/ember-cli-deeplink-component.svg?branch=feature)](https://travis-ci.org/zakmac/ember-cli-deeplink-component)
 
 #### Table of Contents
 
@@ -12,12 +10,12 @@
 - <a href="#user-content-about">About</a>
 - <a href="#user-content-installation">Installation</a>
 - <a href="#user-content-properties">Properties</a>
-- <a href="#user-content-example">Example Code</a>
+- <a href="#user-content-examples">Example Code</a>
 - <a href="#user-content-contributing-modifying">Contributing</a>
 
 ## About
 
-<strong>ember-cli-deeplink-component</strong> provides a <code>{{deep-link}}</code> block component. The component allows for linking to in-page content in much the same way you could on a non-SPA using a plain anchor tag.
+<strong>ember-cli-deeplink-component</strong> provides a <code>{{deep-link}}</code> component in both inline and block form. The component allows for linking to in-page content in much the same way you could on a non single page application site using a plain anchor tag.
 
 ## Installation
 
