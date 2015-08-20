@@ -190,6 +190,7 @@ export default Ember.Component.extend({
     // cancel currently executing `scrollTo` events
     this.cancelAnimation();
 
+    var component = this;
     var currentPosition = Ember.$('body').scrollTop();
     var distance = 0;
     var easing = this.get('easing');
@@ -214,7 +215,7 @@ export default Ember.Component.extend({
       Ember.$('body')
         .animate(
           { scrollTop: targetPosition +'px' },
-          calculateDuration(distance),
+          component.calculateDuration(distance),
           easing
         );
     }
