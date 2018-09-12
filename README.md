@@ -79,5 +79,5 @@ git clone git@github.com:zakmac/ember-cli-deeplink-component.git
 For more information on using **ember-cli**, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).<br>
 For more information on **Ember.js**, visit [http://www.emberjs.com/](http://www.emberjs.com/).<br>
 Looking for more great Ember addons? Check out [http://www.emberobserver.com/](http://www.emberobserver.com/).<br>
-Check out the Ember.js IRC channel at `#emberjs` on **Freenode IRC** or join the [Ember Community Slack organization](https://ember-community-slackin.herokuapp.com/).
+Check out the Ember.js IRC channel at `#emberjs` on **Freenode IRC** or join the [Ember Discord server](https://discord.gg/zT3asNS).
 </small>
